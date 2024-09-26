@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar__logo">
+                <img src="images/custom-hexagon.svg" alt="Dashboard Icon" class="custom-icon">
+                <h1>Dashboard</h1>
+                <span>v.01</span>
+              </div>
+            <nav class="sidebar__nav">
+                <ul>
+                    <li><a href="#"><i data-feather="key"></i>Dashboard</a></li>
+                    <li><a href="#"><i data-feather="square"></i>Product<i data-feather="chevron-right" class="arrow"></i></a></li>
+                    <li class="active"><a href="#"><i data-feather="users"></i>Customers<i data-feather="chevron-right" class="arrow"></i></a></li>
+                    <li><a href="#"><i data-feather="pie-chart"></i>Income<i data-feather="chevron-right" class="arrow"></i></a></li>
+                    <li><a href="#"><i data-feather="percent"></i>Promote<i data-feather="chevron-right" class="arrow"></i></a></li>
+                    <li><a href="#"><i data-feather="help-circle"></i>Help<i data-feather="chevron-right" class="arrow"></i></a></li>
+                </ul>
+            </nav>
+            <div class="sidebar__profile">
+                <img src="images/pexels-moh-adbelghaffar-771742.jpg" alt="Evano's Profile">
+                <div class="profile__info">
+                    <p>Evano</p>
+                    <span>Project Manager</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="main__header">
+                <h2>Hello Evano 👋,</h2>
+            </header>
+
+            <section class="customers">
+                <div class="customers__header">
+                    <div class="customers__title">
+                        <h1>All Customers</h1>
+                        <a href="#" class="customers__active">Active Members</a>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i data-feather="search"></i>
+                    </div>
+                </div>
+                <div class="customers__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Customer Name</th>
+                                <th>Company</th>
+                                <th>Phone Number</th>
+                                <th>Email</th>
+                                <th>Country</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Cooper</td>
+                                <td>Microsoft</td>
+                                <td>(225) 555-0118</td>
+                                <td>jane@microsoft.com</td>
+                                <td>United States</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Floyd Miles</td>
+                                <td>Yahoo</td>
+                                <td>(205) 555-0100</td>
+                                <td>floyd@yahoo.com</td>
+                                <td>Kiribati</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Ronald Richards</td>
+                                <td>Adobe</td>
+                                <td>(302) 555-0107</td>
+                                <td>ronald@adobe.com</td>
+                                <td>Israel</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Marvin McKinney</td>
+                                <td>Tesla</td>
+                                <td>(252) 555-0126</td>
+                                <td>marvin@tesla.com</td>
+                                <td>Iran</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jerome Bell</td>
+                                <td>Google</td>
+                                <td>(629) 555-0129</td>
+                                <td>jerome@google.com</td>
+                                <td>Réunion</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kathryn Murphy</td>
+                                <td>Microsoft</td>
+                                <td>(406) 555-0120</td>
+                                <td>kathryn@microsoft.com</td>
+                                <td>Curaçao</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jacob Jones</td>
+                                <td>Yahoo</td>
+                                <td>(208) 555-0112</td>
+                                <td>jacob@yahoo.com</td>
+                                <td>Brazil</td>
+                                <td><span class="status active">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Kristin Watson</td>
+                                <td>Facebook</td>
+                                <td>(704) 555-0127</td>
+                                <td>kristin@facebook.com</td>
+                                <td>Åland Islands</td>
+                                <td><span class="status inactive">Inactive</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <span>Showing data 1 to 8 of 256K entries</span>
+                    <div class="pagination__controls">
+                        <a href="#" class="prev"><i data-feather="chevron-left"></i></a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <span>...</span>
+                        <a href="#">40</a>
+                        <a href="#" class="next"><i data-feather="chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+window.onload = function() {
+    feather.replace();
+}
+    </script>
+</body>
+</html>
